@@ -1,0 +1,123 @@
+/*------------*/
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-between {
+    justify-content: space-between;
+}
+
+.d-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.d-vertical-c {
+    align-items: center;
+}
+
+.h1-black-style {
+    color: $primany-black;
+    font-weight: bold;
+    font-size: $font-size-12;
+    padding-left: $padding-2;
+    border-left: 8px solid $primany-red;
+    margin-bottom: $margin-8;
+}
+
+.h2-dark-style {
+    font-size: $font-size-12;
+    font-weight: bold;
+    color: $h2-title-dark;
+    text-align: center;
+}
+
+.h2-light-style {
+    font-size: $font-size-12;
+    font-weight: bold;
+    color: $h2-title-light;
+    text-align: center;
+}
+
+.h3-primany-red-style {
+    font-size: $font-size-12;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    color: $primany-red;
+    text-align: center;
+}
+
+.page-select-pd {
+    padding: 13.5px $padding-4;
+}
+
+.wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.assembly {
+    transition: all 0.9s;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+@media (max-width:768px) {
+    .container{
+        max-width: 720px;
+    }
+}
+
+
+@media (max-width: 414px) {
+    .container{
+        max-width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+/*------------*/
+
+
+.goTop {
+    color: #000;
+    display: none;
+    span {
+        position: fixed;
+        right: 50px;
+        bottom: 60px;
+        font-size: $font-size-12;
+        font-weight: 500;
+        font-variation-settings: 'FILL' 1;
+    }
+}
